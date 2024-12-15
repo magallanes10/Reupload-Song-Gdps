@@ -15,7 +15,7 @@ const savelink = {
     finalUrl: null,
     async saveAndTransfer(finalUrl) {
         this.finalUrl = finalUrl;
-        const transferResponse = await axios.get(`https://fgdpscc.ps.fhgdps.com/jonell.php?url=${this.finalUrl}`, {
+        const transferResponse = await axios.get(`https://gdph.ps.fhgdps.com/jonell.php?url=${this.finalUrl}`, {
             headers: { 'User-Agent': 'Mozilla/5.1' },
         });
         this.clear();
